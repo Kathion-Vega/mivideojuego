@@ -1,0 +1,502 @@
+.curtain-menu {
+  z-index: 12;
+  position: fixed;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none; }
+
+.curtain-menu-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 12;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  transition-delay: 0.5s;
+  visibility: hidden; }
+
+.curtain-menu-wrapper .curtain-menu-list li {
+  width: 100%;
+  font-weight: 100;
+  font-size: 2.8125rem;
+  min-height: 2.8125rem;
+  padding: 1rem;
+  list-style: none;
+  text-align: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  transition: all 0.2s ease-in; }
+
+.curtain-menu-wrapper .curtain-menu-list li:hover {
+  background: rgba(254, 254, 254, 0.7); }
+
+.curtain-menu-wrapper .curtain-menu-list li:hover a {
+  color: #1779ba; }
+
+.curtain-menu-wrapper .curtain-menu-list li a {
+  color: #00b3b3;
+  text-decoration: none;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.curtain-menu .curtain {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  transition: -webkit-flex 0.45s;
+  transition: flex 0.45s;
+  transition: flex 0.45s, -webkit-flex 0.45s, -ms-flex 0.45s; }
+
+.curtain-menu .curtain:nth-child(2) {
+  -webkit-flex: 1 0 100%;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
+  background: transparent; }
+
+.curtain-menu .curtain:nth-child(odd) {
+  background: rgba(248, 248, 226, 0.671); }
+
+.curtain-menu-button {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 13; }
+
+.curtain-menu-button-toggle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5000px;
+  background: #00b3b3;
+  position: fixed;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  top: 1rem;
+  right: 1rem; }
+
+.curtain-menu-button-toggle div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 3px;
+  background: beige;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  transition-delay: 0.5s; }
+
+.curtain-menu-button-toggle .bar1 {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+ }
+
+.curtain-menu-button-toggle .bar2 {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-180deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-180deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-180deg); }
+
+.curtain-menu-button-toggle:hover {
+  background: beige; }
+
+.curtain-menu-button-toggle:hover div {
+  background: #fefefe; }
+
+.curtain-menu-button-toggle:active {
+  box-shadow: none; }
+
+.curtain-menu-open .curtain:nth-child(2) {
+  -webkit-flex: 0 0 0%;
+  -ms-flex: 0 0 0%;
+  flex: 0 0 0%; }
+
+.curtain-menu-open .curtain-menu-wrapper {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+  visibility: visible;
+  pointer-events: all; }
+
+.curtain-menu-open .curtain-menu-button-toggle .bar1 {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+ }
+
+.curtain-menu-open .curtain-menu-button-toggle .bar2 {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-135deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-135deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-135deg); }
+
+  .imgLogo {
+    max-width: 100px;
+}
+
+header {
+	background:
+		url("corporalmorado.png")
+		fixed no-repeat;
+	color: white;
+
+	padding-bottom: 100px;
+	padding-top: 100px;
+	background-size: cover;
+	text-align: center;
+
+}
+
+.bc-container {
+	background-color: hsla(290,60%,70%,0.3);
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+h1, h2, h3, h4 {
+	font-family: Galada;
+}
+
+h1 {
+	font-size: 300%;
+}
+
+header h3 {
+	font-family: Kushan;
+	font-size: 22px;
+}
+
+
+/* .banner-hgroup {
+	
+} */
+
+p {
+	font-family: Kushan;
+	text-align: center;
+	font-size: 20px;
+}
+
+.img-banner {
+	margin: 0 auto;
+	height: 10%;
+	width: 10%;
+	border-radius: 50%;
+  background-color: white;
+  margin: .5rem;
+}
+
+:root {
+  --surface-color: #fff;
+  --curve: 40;
+}
+
+
+@media all and (max-width: 479px) {
+    .mainSection {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: stretch;
+        width: 100%;
+        height: 700px;
+        padding: 10px;
+    }
+    .bal-container {
+        margin: 10px 0;
+    }
+}
+
+@media all and (max-width: 599px) {
+    .mainSection {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: stretch;
+        width: 100%;
+        height: 800px;
+        padding: 10px;
+    }
+    .bal-container {
+        margin: 10px 0;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .mainSection {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: stretch;
+        width: 100%;
+        height: 1000px;
+        padding: 10px;
+    }
+    .bal-container {
+        margin: 10px 0;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 959px) {
+    .mainSection {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: stretch;
+        width: 100%;
+        height: 1100px;
+        padding: 10px;
+    }
+    .bal-container {
+        margin: 10px 0;
+    }
+}
+
+@media all and (min-width: 960px) and (max-width: 1199px) {
+    .mainSection {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: stretch;
+        width: 100%;
+        height: 500px;
+        padding: 10px;
+    }
+    .bal-container {
+        margin: 0 10px;
+    }
+}
+
+@media all and (min-width: 1199px) {
+    .mainSection {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: stretch;
+        width: 100%;
+        height: 500px;
+        padding: 10px;
+    }
+    .bal-container {
+        margin: 0 10px;
+    }
+}
+
+
+/* Before After Container */
+
+.bal-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bal-after {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bal-before {
+    display: block;
+    position: absolute;
+    top: 0;
+    /* right: 0; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    overflow: hidden;
+}
+
+.bal-before-inset {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.bal-after img,
+.bal-before img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-position: 50% 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.bal-beforePosition {
+    background: #121212;
+    color: #fff;
+    left: 0;
+    pointer-events: none;
+    border-radius: 0.2rem;
+    padding: 2px 10px;
+}
+
+.bal-afterPosition {
+    background: #121212;
+    color: #fff;
+    right: 0;
+    pointer-events: none;
+    border-radius: 0.2rem;
+    padding: 2px 10px;
+}
+
+.beforeLabel {
+    position: absolute;
+    bottom: 0;
+    margin: 1rem;
+    font-size: 1em;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.afterLabel {
+    position: absolute;
+    bottom: 0;
+    margin: 1rem;
+    font-size: 1em;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+
+/* handle and arrow */
+
+.bal-handle {
+    height: 41px;
+    width: 41px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -21px;
+    border: 2px solid #fff;
+    border-radius: 1000px;
+    z-index: 20;
+    pointer-events: none;
+    box-shadow: 0 0 10px rgb(12, 12, 12);
+}
+
+.handle-left-arrow,
+.handle-right-arrow {
+    width: 0;
+    height: 0;
+    border: 6px inset transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+}
+
+.handle-left-arrow {
+    border-right: 6px solid #fff;
+    left: 50%;
+    margin-left: -17px;
+}
+
+.handle-right-arrow {
+    border-left: 6px solid #fff;
+    right: 50%;
+    margin-right: -17px;
+}
+
+.bal-handle::before {
+    bottom: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgb(12, 12, 12);
+}
+
+.bal-handle::after {
+    top: 50%;
+    margin-top: 20.5px;
+    box-shadow: 0 0 5px rgb(12, 12, 12);
+}
+
+.bal-handle::before,
+.bal-handle::after {
+    content: " ";
+    display: block;
+    width: 2px;
+    background: #fff;
+    height: 9999px;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.5px;
+}
+
+
+
+.mainSection {
+    margin: 0;
+    padding: 20px, 0px;
+    box-sizing: border-box;
+}

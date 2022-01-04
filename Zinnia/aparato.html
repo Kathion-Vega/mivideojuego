@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estaparato.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="curtain-menu-button" data-curtain-menu-button>
+        <div class="curtain-menu-button-toggle">
+            <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1"
+                title="Show Menu Options"> </span>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+
+        </div>
+    </div>
+
+    <!-- the menu  -->
+    <div class="curtain-menu">
+        <div class="curtain"></div>
+        <div class="curtain"></div>
+        <div class="curtain"></div>
+        <div class="curtain-menu-wrapper">
+            <ul class="curtain-menu-list menu vertical">
+                <li><a href="zinnia.html"><img class="imgLogo" src="Zinnia.jpg">
+                    </a></li>
+                <li><a href="facial.html">Facial</a></li>
+                <li><a href="corporal.html">Corporal</a></li>
+                <li><a href="acerca.html">Acera</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <header class="container-fluid img-responsive text-responsive">
+        <div class="bc-container container-fluid row">
+            <img class="img-responsive img-banner" src="aparatoLogo.PNG">
+            <hgroup class="banner-hgroup">
+                <h3 style="margin: 0px;">Tratamientos</h3>
+                <h1  style="margin: 0px;">Aparatología</h1>
+                <a href="zinnia.html"><img src="Zinnia.jpg" style="max-height:50px"></a>
+            </hgroup>
+        </div>
+    </header>
+    <div class="grid">
+
+        <article class="main">
+            
+            <div class="img-comp-container">
+                <div class="img-comp-img">
+                    <img class="ejemplo" src="ejem1a.jpg" width="300" height="500">
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                    <img src="ejem1b.jpg" width="300" height="500">
+                </div>
+            </div>
+        </article>
+        <section class="side">
+            <div class="img-comp-container">
+                <div class="img-comp-img">
+                    <img src="ejem2a.jpg" width="300" height="500">
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                    <img src="ejem2b.jpg" width="300" height="500">
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        $(document).ready();
+        $('[data-curtain-menu-button]').click(function () {
+            $('body').toggleClass('curtain-menu-open');
+        });
+    </script>
+    <script src="lacompare.js"></script>
+</body>
+
+</html>

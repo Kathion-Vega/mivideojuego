@@ -1,0 +1,293 @@
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .mobile-container {
+            margin: auto;
+
+            height: 500px;
+            color: white;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .topnav {
+            overflow: hidden;
+
+            position: relative;
+        }
+
+        .topnav #myLinks {
+            display: none;
+            background-color: beige;
+        }
+
+        .topnav a {
+            color:#00b3b3;
+            padding: 14px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+
+        .topnav a.icon {
+
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+
+        .topnav a:hover {
+
+            color: purple;
+            margin-left: 20px;
+        }
+
+        .active {
+            background-color: white;
+            color: purple;
+        }
+
+.imgLogo {
+    max-width: 100px;
+}
+
+.fa {
+    margin: 30px;
+}
+	
+
+header {
+	background:
+		url("facialMain.png")
+		fixed no-repeat;
+	color: white;
+
+	padding-bottom: 100px;
+	padding-top: 100px;
+	background-size: cover;
+	text-align: center;
+  background-position: -300px;
+}
+
+.bc-container {
+	background-color: hsla(290,60%,70%,0.3);
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+h1, h2, h3, h4 {
+	font-family: Galada;
+}
+
+h1 {
+	font-size: 300%;
+}
+
+header h3 {
+	font-family: Kushan;
+	font-size: 22px;
+}
+
+/* .banner-hgroup {
+	
+} */
+
+p {
+	font-family: Kushan;
+	text-align: center;
+	font-size: 20px;
+}
+
+.img-banner {
+	margin: 0 auto;
+	height: 10%;
+	width: 10%;
+	border-radius: 50%;
+  background-color: white;
+  margin: .5rem;
+}
+
+:root {
+  --surface-color: #fff;
+  --curve: 40;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #fef8f8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 15rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;  
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card__image {      
+  width: 100%;
+  height: auto;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;      
+  border-radius: calc(var(--curve) * 1px);    
+  background-color: var(--surface-color);      
+  transform: translateY(100%);
+  transition: .2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;    
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;      
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}       
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;      
+  border-radius: 50%;      
+}
+
+.card__title {
+  font-size: 1em;
+  margin: 0 0 .3em;
+  color: #6A515E;
+}
+
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+  font-family: "MockFlowFont";  
+  font-size: .8em; 
+  color: #D7BDCA;  
+}
+
+.card__status {
+  font-size: .8em;
+  color: #D7BDCA;
+}
+
+.card__description {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: #D7BDCA;
+  font-family: "MockFlowFont";   
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}    
+
+
+.btn-2 {
+    letter-spacing: 0;
+    font-weight: 500;
+}
+
+.btn-2:hover,
+.btn-2:active {
+  letter-spacing: 5px;
+  font-weight: 200;
+}
+
+.btn-2:after,
+.btn-2:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(225, 225, 225);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn-2:hover:after,
+.btn-2:hover:before {
+  backface-visibility: hidden;
+  border-color: purple;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+  color: purple;
+}
+
+.btn-2:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+
+.btn {
+  color: purple;
+  cursor: pointer;
+  /* display: block; */
+  font-size:16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 0 -.2em;
+  max-width: 160px; 
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%; 
+}
+
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
