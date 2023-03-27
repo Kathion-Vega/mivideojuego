@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "445776193437",
+    "firebase_url": "https://misaniresh-default-rtdb.firebaseio.com",
+    "project_id": "misaniresh",
+    "storage_bucket": "misaniresh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445776193437:android:222ff3e0615d560a1b3174",
+        "android_client_info": {
+          "package_name": "com.kathiones.misaniresh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445776193437-kn5opjope3ni9brm1qjvef5m570qv403.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTVYBTE6zIy25jZgKQyMXVKjlotfekZaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445776193437-kn5opjope3ni9brm1qjvef5m570qv403.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
